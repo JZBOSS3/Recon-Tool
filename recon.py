@@ -125,7 +125,7 @@ def handle_menu_option(option):
     elif option == '8':  # Subdomain Enumeration
         subprocess.run(['python', 'tools/subdomain.py'])
     elif option == '9': #active domains
-        subprocess.eun(['python', 'tools/active_domains.py'])
+        subprocess.run(['python', 'tools/active_domains.py'])
     elif option == 'help':
         print_help_menu()
     elif option == 'clear':
