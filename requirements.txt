@@ -1,10 +1,5 @@
 requests
-sys
-os
-subprocess
 colorama
-socket
-re
 urllib3
 beautifulsoup4
 Pillow
