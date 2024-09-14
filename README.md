@@ -4,13 +4,11 @@
 
 # Installation
 
-git clone https://github.com/JZBOSS3/Recon-Tool
-
-cd Recon-Tool/
-
-pip install -r requirements.txt
-
-python3 recon.py
+. git clone https://github.com/JZBOSS3/Recon-Tool
+. cd Recon-Tool/
+. pip install -r requirements.txt
+. python setup.py
+. python3 recon.py
 
 # Screenshots:
 1- Directory Brute Forcer:
