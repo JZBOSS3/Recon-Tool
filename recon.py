@@ -51,7 +51,6 @@ def print_ascii_art():
     """
     credits ="""
                     recon.py by jzboss3
-                    Credits: OwlSec🦉
     """
 
     print(Fore.BLUE + magnifying_glass_art, end='\r' + Style.RESET_ALL)
@@ -68,6 +67,7 @@ def print_banner():
     print(Fore.WHITE + "7- WHOIS Lookup" + Style.RESET_ALL)
     print(Fore.WHITE + "8- Subdomain Enumeration" + Style.RESET_ALL)
     print(Fore.WHITE + "9- Check Active Domains" + Style.RESET_ALL)
+    print(Fore.WHITE + "10- ScreenShot Domains" + Style.RESET_ALL)
     print(Fore.LIGHTBLACK_EX + "Run help for more info" + Style.RESET_ALL)
     print(Fore.LIGHTBLACK_EX + "Run quit to exit" + Style.RESET_ALL)
     print(Fore.YELLOW + "-"*50 + Style.RESET_ALL)
@@ -101,6 +101,9 @@ def print_help_menu():
     # Check for active domains
     print(Fore.WHITE + "9- Check Active Domains" + Style.RESET_ALL)
     print(Fore.LIGHTBLUE_EX + "\tDiscover acive domains from a list." + Style.RESET_ALL)
+    #ScreenShot Domains
+    print(Fore.WHITE + "10- ScreenShot Domains" + Style.RESET_ALL)
+    print(Fore.LIGHTBLUE_EX + "\tTake a screenshot of the domain's home page." + Style.RESET_ALL)
     print(Fore.RED + "-"*50 + Style.RESET_ALL)
 
 def get_user_entry():
@@ -109,23 +112,35 @@ def get_user_entry():
 
 def handle_menu_option(option):
     if option == '1':  # Directory BruteForcing
-        subprocess.run(['python', 'tools/dir_bruter.py'])
+        subprocess.run(['python3', 'tools/dir_bruter.py'])
+        sys.exit()
     elif option == '2':  # Port Scanner
-        subprocess.run(['python', 'tools/port_scan.py'])
+        subprocess.run(['python3', 'tools/port_scan.py'])
+        sys.exit()
     elif option == '3':  # Email Address Harvesting
-        subprocess.run(['python', 'tools/email_harvest.py'])
+        subprocess.run(['python3', 'tools/email_harvest.py'])
+        sys.exit()
     elif option == '4':  # Social Media Profiling
-        subprocess.run(['python', 'tools/social_media.py'])
+        subprocess.run(['python3', 'tools/social_media.py'])
+        sys.exit()
     elif option == '5':  # Metadata Extraction
-        subprocess.run(['python', 'tools/metadata_extract.py'])
+        subprocess.run(['python3', 'tools/metadata_extract.py'])
+        sys.exit()
     elif option == '6':  # IP Geolocation
-        subprocess.run(['python', 'tools/ip_locate.py'])
+        subprocess.run(['python3', 'tools/ip_locate.py'])
+        sys.exit()
     elif option == '7':  # WHOIS Lookup
-        subprocess.run(['python', 'tools/whois.py'])
+        subprocess.run(['python3', 'tools/whois.py'])
+        sys.exit()
     elif option == '8':  # Subdomain Enumeration
-        subprocess.run(['python', 'tools/subdomain.py'])
+        subprocess.run(['python3', 'tools/subdomain.py'])
+        sys.exit()
     elif option == '9': #active domains
-        subprocess.run(['python', 'tools/active_domains.py'])
+        subprocess.run(['python3', 'tools/active_domains.py'])
+        sys.exit()
+    elif option == '10': #screenshot domains
+        subprocess.run(['python3', 'tools/screenshot_domains.py']);
+        sys.exit()
     elif option == 'help':
         print_help_menu()
     elif option == 'clear':
