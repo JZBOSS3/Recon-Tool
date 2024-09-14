@@ -4,10 +4,14 @@
 
 # Installation
 
-. git clone https://github.com/JZBOSS3/Recon-Tool
+.git clone https://github.com/JZBOSS3/Recon-Tool
+
 . cd Recon-Tool/
+
 . pip install -r requirements.txt
+
 . python setup.py
+
 . python3 recon.py
 
 # Screenshots:
