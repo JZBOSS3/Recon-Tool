@@ -4,7 +4,7 @@
 
 # Installation
 
-.git clone https://github.com/JZBOSS3/Recon-Tool
+. git clone https://github.com/JZBOSS3/Recon-Tool
 
 . cd Recon-Tool/
 
