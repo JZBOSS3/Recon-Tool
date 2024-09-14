@@ -39,3 +39,6 @@ python3 recon.py
 
 9- Find Active Domains:
 ![image](https://github.com/JZBOSS3/Recon-Tool/assets/66354470/c51bec1a-4f50-45ba-bc15-fb1958fd6dfa)
+
+10- Screenshot Domains:
+![image](https://github.com/user-attachments/assets/61c7999b-fcf3-49aa-8be7-5bbb4d577307)
